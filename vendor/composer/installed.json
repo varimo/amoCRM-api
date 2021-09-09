@@ -1,0 +1,60 @@
+{
+    "packages": [
+        {
+            "name": "andrey-tech/amocrm-api-php",
+            "version": "2.11.1",
+            "version_normalized": "2.11.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/andrey-tech/amocrm-api-php.git",
+                "reference": "2d5f854fd9703ad46e9f805834fca58d9a66f14f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/andrey-tech/amocrm-api-php/zipball/2d5f854fd9703ad46e9f805834fca58d9a66f14f",
+                "reference": "2d5f854fd9703ad46e9f805834fca58d9a66f14f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "time": "2020-07-16T15:31:41+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "AmoCRM\\": "src/AmoCRM"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "andrey-tech",
+                    "homepage": "https://github.com/andrey-tech/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Обертка для работы с API v2 amoCRM с авторизацией по протоколу oAuth 2.0 или по API-ключу пользователя, троттлингом запросов, блокировкой одновременного обновления одной сущности и логированием в файл",
+            "homepage": "https://github.com/andrey-tech/amocrm-api-php",
+            "keywords": [
+                "amoCRM",
+                "api",
+                "api-wrapper",
+                "crm",
+                "logging",
+                "oauth2",
+                "throttling"
+            ],
+            "support": {
+                "issues": "https://github.com/andrey-tech/amocrm-api-php/issues",
+                "source": "https://github.com/andrey-tech/amocrm-api-php/tree/2.11.1"
+            },
+            "install-path": "../andrey-tech/amocrm-api-php"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

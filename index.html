@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Форма обратной связи</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js" type="text/javascript"></script>
+</head>
+<body>
+    <form method="post" id="ajax_form" action="send-crm.php">
+        <div class="feedback">
+            <label for="name">Имя:</label>
+            <input maxlength="30" type="text" name="name" placeholder="Например, Иван"/>
+            <label for="phone">Телефон:</label>
+            <input maxlength="30" type="text" id="phone" name="phone" placeholder="+7 (999) 999 99 99"/>
+            <script>
+                $(function(){
+                  $("#phone").mask("+79999999999");
+                });
+                </script>
+            <label for="email">Email:</label>
+            <input maxlength="30" type="text" name="email" placeholder="mail@gmail.com"/>
+            <label for="city">Город:</label>
+            <input maxlength="30" type="text" name="city" placeholder="Например, Москва"/>
+            <label for="service">Услуга:</label>
+            <select name="service">
+                <option value="Диагностика">Диагностика</option>
+                <option value="Ремонт">Ремонт</option>
+            </select>            
+            <label for="message">Комментарий:</label>
+            <textarea rows="7" cols="40" name="message"></textarea>
+            <input type="submit" name="button" id="btn" value="Отправить" />
+        </div>
+        <div id="result_form"></div> 
+     </form>
+     <script src="ajax.js"></script>
+</body>
+</html>
